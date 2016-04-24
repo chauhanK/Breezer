@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="angular.js"></script>   
+	<script type="text/javascript" src="app.js"></script>
+<style>
+	header {
+    background-color:#8c0d26;
+    color:white;
+    text-align:center;
+    height: 150px;
+    font-size: 50px;
+    padding:10px;	 
+}
+</style>
+</head>
+<body>
+<header>Brezeer</header>
+<nav ng-app="">
+<ul class="nav nav-pills">
+	<li ng-class="{active:tab===1}">
+	<a href ng-click="tab = 1">Music</a>
+	</li>
+	<li ng-class="{active:tab===2}">
+	<a href ng-click="tab = 2">Videos</a>
+	</li>
+	<li ng-class="{active:tab===3}">
+	<a href ng-click="tab = 3">Books</a>
+	</li>
+</ul>
+<div class="panel" ng-show="tab === 1">
+	<h4> Songs </h4>
+	<ul>
+		<li>Pehela Nasha</li>
+		<li>Kar gyi Chull</li>
+	</ul>
+</div>
+<div class="panel" ng-show="tab === 2">
+	<h4>Videos</h4>
+	<blockquote>Not yet</blockquote>
+</div>
+<div class="panel" ng-show="tab === 3">
+	<h4> Books </h4>
+	<ul>
+		<li>2 states</li>
+		<li>Half Girlfriend</li>
+	</ul>
+</div>
+</nav>
+<section>
+	<img src="image1.jpg" style="width:1200px;height:500px;">
+</section>
+<footer>Copyright Breezer.com</footer>
+
