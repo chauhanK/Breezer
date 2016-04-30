@@ -1,0 +1,8 @@
+. design a simple tab : books, songs, videos
+. mock the test data
+. consume the data from the server as a web service
+				: web service in general
+               			: http 
+				: rest  - json
+				: web server* 	
+				: how to consume rest in angular 
